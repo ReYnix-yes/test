@@ -1,0 +1,47 @@
+/* styles.module.scss */
+
+.title-anim {
+    transition: all 3.3s ease; /* Плавная анимация со сменой состояния элемента */
+    transform: translateY(350px); /* Начальное положение элемента */
+    opacity: 0; /* Начальная прозрачность элемента */
+  }
+  
+  .title-anim.active {
+    transform: translateY(150px); /* Конечное положение элемента */
+    opacity: 1; /* Конечная прозрачность элемента */
+  }
+  
+  .anim__text {
+    background-color: rgba(0, 0, 0, 0.418);
+    display: inline-block; /* Делаем текст внутри элемента блочным, чтобы можно было применить translateY */
+  }
+  
+  #styles.text_oil,
+  #styles.gold {
+    /* Стили для текста "нефть" и "золото", если требуется */
+    font-weight: bold; /* Жирный шрифт для "нефть" и "золото" */
+  }
+  
+
+.anim__text {
+    color: white;
+    font-size: 30px;
+    padding: 30px;
+    font-family: 'Comfortaa', sans-serif;
+    text-shadow: 5px 5px 5px black;
+}
+
+@media screen and (max-width: 600px) {
+    .title-anim.active {
+        transform: translateY(0px); /* Конечное положение элемента */
+    }
+    .anim__text {
+        
+        padding: 15px;
+    }
+    .anim__text {
+      width: 100%;
+      max-width: 360px;
+      font-size: 26px;
+    }
+} 

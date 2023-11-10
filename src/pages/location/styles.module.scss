@@ -1,0 +1,58 @@
+.location {
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+.location__text__wrapper {
+    width: auto;
+    font-size: 16px;
+}
+
+.location__title {
+    padding: 20px;
+    font-size: 40px;
+}
+
+.location__text {
+    font-family: 'Inter', sans-serif;
+    max-width: 250px;
+    padding: 20px;
+    font-size: 20px;
+    opacity: .8;
+}
+
+
+.map__wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    min-height: 550px;
+    overflow: hidden;
+    margin: 50px;
+}
+.map_mob {
+    display: none;
+}
+
+.map {
+}
+
+
+@media screen and (max-width: 1000px) {
+    .map_desktop {
+        display: none;
+    }
+    .map_mob {
+        display: block;
+        width: 100%;
+    }
+    .location {
+        flex-direction: column;
+    }
+    .map__wrapper {
+        width: auto;
+        height: auto;
+    }
+}

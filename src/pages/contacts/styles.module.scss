@@ -1,0 +1,151 @@
+.contact {
+  display: flex;
+
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.section {
+  width: 100%;
+  max-width: 400px;
+  height: 700px;
+  border-right: 1px solid black;
+}
+
+#ourinfo {
+  margin-bottom: 100px;
+  font-size: 35px;
+}
+
+.section__title__wrapper {
+  margin-bottom: 50px;
+}
+
+.section__text__wrapper {}
+
+
+
+
+#nameChief {
+  border-bottom: 1px solid black;
+}
+
+#Chief_text {
+  text-transform: uppercase;
+}
+
+#contact__line {
+  display: none;
+}
+
+
+
+// Form
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .form_title {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .form_group {
+    margin-bottom: 15px;
+
+    input.error,
+    textarea.error {
+      border-color: red;
+    }
+
+    .error_message {
+      color: red;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-bottom: 3px solid #000000;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+  }
+
+  button[type="submit"] {
+    width: 150px;
+    padding: 10px;
+    background-color: #337ab7;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    transition: .5s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(132, 214, 9);
+    }
+  }
+}
+
+@media screen and (max-width: 1070px) {
+
+
+  .contact {
+    margin-top: 120px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section {
+    height: auto;
+    border: none;
+
+  }
+
+  .contact_form {
+    width: 100%;
+    min-width: 0px;
+    margin: 0px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #contact__line {
+    display: block;
+  }
+  #message {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+}
